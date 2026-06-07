@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ofertas — Compusoluciones</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Estilos/Estilos_ofertas.css">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>📍 4ta calle 7-19 Zona 1, Barberena, Santa Rosa &nbsp;|&nbsp; ☎ (502) 4898-0077</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo-wrap">
+      <img src="../Imagenes/Vista/Logo.png" alt="Logo-compusoluciones">
+      <div>
+        <div class="logo-name">Compusoluciones</div>
+        <div class="logo-sub">Tecnología • Barberena</div>
+      </div>
+    </a>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar en Compusoluciones">
+      <button>🔍</button>
+    </div>
+    <div class="header-actions">
+      <a href="#" class="hbtn"><img src="../Imagenes/Vista/Usuario.png" alt="usuario" width="12%">Mi Cuenta</a>
+      <a href="#" class="hbtn"><span>❤️</span>Favoritos</a>
+      <a href="#" class="hbtn cart"><span>🛒</span>Carrito (0)</a>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-item">Inicio</a>
+    <a href="ofertas.html" class="nav-item ofertas active">🔥 Súper Ofertas</a>
+    <a href="#" class="nav-item">Laptops</a>  
+    <a href="#" class="nav-item">Impresoras</a>
+    <a href="#" class="nav-item">Gaming</a>
+    <a href="#" class="nav-item">Componentes</a>
+    <a href="#" class="nav-item">Accesorios</a>
+    <a href="#" class="nav-item">Redes</a>
+    <a href="#" class="nav-item">Equipo de videovigilancia</a>
+    <a href="#" class="nav-item">Office y Antivirus</a>
+    <a href="#" class="nav-item">Programación Web</a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="compusoluciones.html">🏠 Inicio</a>
+  <span class="sep">›</span>
+  <span>Súper Ofertas</span>
+</div>
+
+<!-- PAGE -->
+<div class="page-wrap">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-box">
+      <div class="sidebar-title">Categorías</div>
+      <ul class="cat-list">
+        <li><a href="#" class="active">🔥 Todas las Ofertas</a></li>
+        <li><a href="#">💻 Laptops</a></li>
+        <li><a href="#">📱 Celulares</a></li>
+        <li><a href="#">🖥️ Computadoras</a></li>
+        <li><a href="#">🖨️ Impresoras</a></li>
+        <li><a href="#">🎮 Gaming</a></li>
+        <li><a href="#">⌨️ Accesorios</a></li>
+        <li><a href="#">📡 Redes / WiFi</a></li>
+        <li><a href="#">💾 Almacenamiento</a></li>
+        <li><a href="#">🖥️ Monitores</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <div class="sidebar-title">Rango de Precio</div>
+      <div class="price-filter">
+        <label>Precio máximo: <strong id="priceVal">Q 5,000</strong></label>
+        <input type="range" min="500" max="10000" step="100" value="5000"
+               oninput="document.getElementById('priceVal').textContent='Q '+parseInt(this.value).toLocaleString()">
+        <div class="price-range-vals"><span>Q 500</span><span>Q 10,000</span></div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <div class="sidebar-title">Marcas</div>
+      <div class="filter-chips">
+        <span class="chip active">Todas</span>
+        <span class="chip">HP</span>
+        <span class="chip">Lenovo</span>
+        <span class="chip">Dell</span>
+        <span class="chip">Asus</span>
+        <span class="chip">Samsung</span>
+        <span class="chip">Epson</span>
+        <span class="chip">Logitech</span>
+        <span class="chip">Kingston</span>
+        <span class="chip">Xiaomi</span>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <div class="sidebar-title">Descuento</div>
+      <div class="filter-chips">
+        <span class="chip">10%+</span>
+        <span class="chip">20%+</span>
+        <span class="chip">30%+</span>
+        <span class="chip">50%+</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- HERO -->
+    <div class="hero-strip">
+      <div>
+        <h1>🔥 Súper <em>Ofertas</em></h1>
+        <p>Los mejores precios en tecnología — solo por tiempo limitado</p>
+      </div>
+      <div class="hero-badge">Hasta 50% OFF</div>
+    </div>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-strip">
+      <div class="cd-label"><strong>⏱ Oferta Flash</strong>Termina en:</div>
+      <div class="cd-boxes">
+        <div class="cd-box"><div class="cd-num" id="cd-h">08</div><div class="cd-unit">Horas</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><div class="cd-num" id="cd-m">34</div><div class="cd-unit">Min</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><div class="cd-num" id="cd-s">52</div><div class="cd-unit">Seg</div></div>
+      </div>
+    </div>
+
+    <!-- TOOLBAR -->
+    <div class="toolbar">
+      <div class="result-count">Mostrando <strong>24</strong> de <strong>87</strong> productos en oferta</div>
+      <div class="toolbar-right">
+        <select class="sort-select">
+          <option>Mayor descuento</option>
+          <option>Menor precio</option>
+          <option>Mayor precio</option>
+          <option>Más vendidos</option>
+          <option>Nuevos primero</option>
+        </select>
+        <div class="view-btns">
+          <button class="view-btn active" id="btnGrid" title="Vista cuadrícula">⊞</button>
+          <button class="view-btn" id="btnList" title="Vista lista">☰</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID -->
+    <div class="product-grid" id="productGrid">
+
+      <!-- Card 1 -->
+      <div class="product-card">
+        <div class="badge oferta">-20%</div>
+        <div class="fav-btn">♡</div>
+        <div class="prod-img-wrap"><img src="../Imagenes/Laptops/Hp15s.webp" alt="HP15S" height="115%"></div>
+        <div class="prod-info">
+          <div class="prod-brand">HP</div>
+          <div class="prod-name">HP Laptop 15s Core i5, 8GB RAM, 512GB SSD</div>
+          <div class="prod-stars">★★★★★ <span>(48)</span></div>
+          <div class="price-old">Q 4,299</div>
+          <div class="price-new">Q 3,439 <span class="price-save">Ahorrás Q860</span></div>
+          <button class="btn-add">🛒 Agregar</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="product-card">
+        <div class="badge-oferta">-10%</div>
+        <div class="fav-btn">♡</div>
+        <div class="prod-img-wrap"><img src="../Imagenes/Impresoras/G2110.jpg" alt="G2110" height="150%"></div>
+        <div class="prod-info">
+          <div class="prod-brand">Canon</div>
+          <div class="prod-name">Impresora Multifuncional Canon G2110</div>
+          <div class="prod-stars">★★★★★ <span>(48)</span></div>
+          <div class="price-old">Q 1,666.67</div>
+          <div class="price-new">Q 1,500.00 <span class="price-save">Ahorrás Q 166.67</span></div>
+          <button class="btn-add">🛒 Agregar</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="product-card">
+        <div class="badge oferta">-25%</div>
+        <div class="fav-btn">♡</div>
+        <div class="prod-img-wrap"><span class="prod-icon">🖨️</span></div>
+        <div class="prod-info">
+          <div class="prod-brand">Epson</div>
+          <div class="prod-name">Impresora EcoTank L3250 Multifuncional WiFi</div>
+          <div class="prod-stars">★★★★☆ <span>(62)</span></div>
+          <div class="price-old">Q 1,799</div>
+          <div class="price-new">Q 1,349 <span class="price-save">Ahorrás Q450</span></div>
+          <button class="btn-add">🛒 Agregar</button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="product-card">
+        <div class="badge oferta">-30%</div>
+        <div class="fav-btn">♡</div>
+        <div class="prod-img-wrap"><span class="prod-icon">🖱️</span></div>
+        <div class="prod-info">
+          <div class="prod-brand">Logitech</div>
+          <div class="prod-name">Mouse Gamer G502 Hero 25,600 DPI RGB</div>
+          <div class="prod-stars">★★★★★ <span>(134)</span></div>
+          <div class="price-old">Q 599</div>
+          <div class="price-new">Q 419 <span class="price-save">Ahorrás Q180</span></div>
+          <button class="btn-add">🛒 Agregar</button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="product-card">
+        <div class="badge oferta">-18%</div>
+        <div class="fav-btn">♡</div>
+        <div class="prod-img-wrap"><span class="prod-icon">💻</span></div>
+        <div class="prod-info">
+          <div class="prod-brand">Dell</div>
+          <div class="prod-name">Dell Inspiron 15 Ryzen 5, 8GB, 256GB SSD</div>
+          <div class="prod-stars">★★★★★ <span>(39)</span></div>
+          <div class="price-old">Q 3,800</div>
+          <div class="price-new">Q 3,116 <span class="price-save">Ahorrás Q684</span></div>
+          <button class="btn-add">🛒 Agregar</button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="product-card">
+        <div class="badge oferta">-40%</div>
+        <div class="fav-btn">♡</div>
+        <div class="prod-img-wrap"><span class="prod-icon">🎧</span></div>
+        <div class="prod-info">
+          <div class="prod-brand">HyperX</div>
+          <div class="prod-name">Audífonos Cloud Alpha S 7.1 Virtual Surround</div>
+          <div class="prod-stars">★★★★★ <span>(77)</span></div>
+          <div class="price-old">Q 1,199</div>
+          <div class="price-new">Q 719 <span class="price-save">Ahorrás Q480</span></div>
+          <button class="btn-add">🛒 Agregar</button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="product-card">
+        <div class="badge oferta">-22%</div>
+        <div class="fav-btn">♡</div>
+        <div class="prod-img-wrap"><span class="prod-icon">💾</span></div>
+        <div class="prod-info">
+          <div class="prod-brand">Kingston</div>
+          <div class="prod-name">SSD NV2 1TB M.2 NVMe PCIe 4.0 3500 MB/s</div>
+          <div class="prod-stars">★★★★☆ <span>(55)</span></div>
+          <div class="price-old">Q 449</div>
+          <div class="price-new">Q 350 <span class="price-save">Ahorrás Q99</span></div>
+          <button class="btn-add">🛒 Agregar</button>
+        </div>
+      </div>
+
+      <!-- Card 8 — AGOTADO -->
+      <div class="product-card">
+        <div class="badge agot">Agotado</div>
+        <div class="fav-btn">♡</div>
+        <div class="prod-img-wrap" style="opacity:.5"><span class="prod-icon">📱</span></div>
+        <div class="prod-info">
+          <div class="prod-brand">Xiaomi</div>
+          <div class="prod-name">Redmi Note 13 Pro 256GB Negro Medianoche</div>
+          <div class="prod-stars">★★★★☆ <span>(44)</span></div>
+          <div class="price-old">Q 2,299</div>
+          <div class="price-new" style="color:#aab4c2;">Q 1,839</div>
+        </div>
+      </div>
+
+    </div><!-- /grid -->
+
+    <!-- PAGINACIÓN -->
+    <div class="pagination">
+      <div class="page-btn">‹</div>
+      <div class="page-btn active">1</div>
+      <div class="page-btn">2</div>
+      <div class="page-btn">3</div>
+      <div class="page-btn dots">…</div>
+      <div class="page-btn">8</div>
+      <div class="page-btn">›</div>
+    </div>
+
+  </div><!-- /content -->
+</div><!-- /page-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+       
+        <div class="footer-logo-name">Compusoluciones</div>
+      </div>
+      <p>Tu tienda de confianza en tecnología para Guatemala. Laptops, celulares, impresoras y más con garantía oficial y los mejores precios.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">📘</a>
+        <a href="#" class="social-btn">📸</a>
+        <a href="#" class="social-btn">💬</a>
+        <a href="#" class="social-btn">🐦</a>
+      </div>
+    </div>
+    <div>
+      <h4>Comprar</h4>
+      <ul>
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">Impresoras</a></li>
+        <li><a href="#">Gaming</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Monitores</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Mi Cuenta</h4>
+      <ul>
+        <li><a href="#">Iniciar Sesión</a></li>
+        <li><a href="#">Registrarse</a></li>
+        <li><a href="#">Mis Pedidos</a></li>
+        <li><a href="#">Favoritos</a></li>
+        <li><a href="#">Historial</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Información</h4>
+      <ul>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Garantías</a></li>
+        <li><a href="#">Políticas</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border-top: 1px solid rgba(255,255,255,0.08);">
+    <div class="footer-bottom">
+      <span>© 2026 Compusoluciones Guatemala. Todos los derechos reservados.</span>
+      <div>
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Favoritos
+document.querySelectorAll('.fav-btn').forEach(b => {
+  b.addEventListener('click', () => b.textContent = b.textContent === '♡' ? '❤️' : '♡');
+});
+
+// Agregar al carrito
+document.querySelectorAll('.btn-add:not(.agotado)').forEach(b => {
+  b.addEventListener('click', function() {
+    const orig = this.textContent;
+    this.textContent = '✅ Agregado';
+    this.style.background = '#15784f';
+    setTimeout(() => { this.textContent = orig; this.style.background = ''; }, 1500);
+  });
+});
+
+// Vista grid / lista
+const grid = document.getElementById('productGrid');
+document.getElementById('btnGrid').addEventListener('click', function() {
+  grid.classList.remove('list-view');
+  this.classList.add('active');
+  document.getElementById('btnList').classList.remove('active');
+});
+document.getElementById('btnList').addEventListener('click', function() {
+  grid.classList.add('list-view');
+  this.classList.add('active');
+  document.getElementById('btnGrid').classList.remove('active');
+});
+
+// Chips de filtro (toggle)
+document.querySelectorAll('.chip').forEach(c => {
+  c.addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
+});
+
+// Paginación
+document.querySelectorAll('.page-btn:not(.dots)').forEach(b => {
+  b.addEventListener('click', function() {
+    document.querySelectorAll('.page-btn').forEach(x => x.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// Countdown
+let totalSecs = (8 * 3600) + (34 * 60) + 52;
+function tick() {
+  if (totalSecs <= 0) return;
+  totalSecs--;
+  const h = Math.floor(totalSecs / 3600);
+  const m = Math.floor((totalSecs % 3600) / 60);
+  const s = totalSecs % 60;
+  document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+  document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+  document.getElementById('cd-s').textContent = String(s).padStart(2,'0');
+}
+setInterval(tick, 1000);
+</script>
+
+</body>
+</html>
