@@ -93,7 +93,7 @@
   box-shadow: 4px 4px var(--main-color);
   justify-content: center;
   align-items: center;
-  width: 35%;
+  width: 30%;
 }
 
 .title {
@@ -116,7 +116,7 @@
 }
 
 .input {
-  width: 250px;
+  width: 75%;
   height: 40px;
   border-radius: 5px;
   border: 2px solid var(--main-color);
@@ -171,6 +171,21 @@
 
 .button-confirm {
   margin: 10px auto 0 auto;
+  width: 25%;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-register {
+  margin: -25px auto 0 auto;
   width: 120px;
   height: 40px;
   border-radius: 5px;
@@ -181,6 +196,7 @@
   font-weight: 600;
   color: var(--font-color);
   cursor: pointer;
+  text-decoration: none;
 }
 
   /* FOOTER */
