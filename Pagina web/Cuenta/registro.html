@@ -6,6 +6,7 @@
 <title>Mi cuenta</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../Estilos/Estilos_micuenta.css">
+
 </head>
 <body>
 <!-- TOPBAR -->
@@ -44,15 +45,15 @@
   <center>
     <div class="title">Crea tu cuenta<br><span>Ingresa a tu cuenta de Compusoluciones</span></div>
   </center>
-  <input type="text" placeholder="Nombre" name="email" class="input" required>
+  <input type="text" placeholder="Nombre" name="nombre" class="input" required>
   <input type="email" placeholder="Correo electrónico" name="email" class="input" required>
-  <input type="text" placeholder="Número de teléfono" name="email" class="input" required>
-  <input type="password" placeholder="Contraseña" name="password" class="input" required> 
-  <input type="password" placeholder="Confirmar contraseña" name="password" class="input" required>
+  <input type="text" placeholder="Número de teléfono" name="telefono" class="input" required>
+  <input type="password" placeholder="Contraseña" name="password" class="input" id="psw" required> 
+  <input type="password" placeholder="Confirmar contraseña" name="pswconfirm" class="input" id="confpsw" required>
   
-  <div class="g-recaptcha" data-sitekey="6LfBuhItAAAAAM_lQOErBXJ1BBgYJXvlsqZ-JG2B" required></div>
+  <div class="g-recaptcha" data-sitekey="6LfBuhItAAAAAM_lQOErBXJ1BBgYJXvlsqZ-JG2B"></div>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <button class="button-confirm">Crea tu cuenta</button>
+  <button class="button-confirm" type="submit">Crea tu cuenta</button>
   <span class="textoini">O registrate con:</span>
   <div class="login-with">
     <div class="button-log">
