@@ -40,10 +40,10 @@
   }
   .header-inner {
     max-width: 1280px; margin: 0 auto; padding: 0 20px;
-    display: flex; align-items: center; gap: 20px; height: 72px;
+    display: flex; align-items: center; gap: 20px; height: 125px;
   }
   .logo-wrap { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
-  .logo-wrap img { height: 52px; width: 52px; object-fit: contain; border-radius: 50%; background: white; padding: 2px; }
+  .logo-wrap img, .hbtn img{ height: 3rem; width: 3rem; object-fit: contain; border-radius: 50%; background: white; padding: 2px; }
   .logo-name { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: white; letter-spacing: 0.5px; line-height: 1.1; }
   .logo-sub { font-size: 10px; color: #90bcef; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; }
 
@@ -67,7 +67,7 @@
     background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
     border-radius: 8px; padding: 8px 14px; cursor: pointer; color: white;
     font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
-    transition: background 0.2s; text-decoration: none;
+    transition: background 0.2s; text-decoration: none; text-align: center;
   }
   .hbtn:hover { background: rgba(255,255,255,0.22); }
   .hbtn span { font-size: 20px; }
@@ -93,7 +93,7 @@
   box-shadow: 4px 4px var(--main-color);
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 75%;
 }
 
 .title {
@@ -172,7 +172,7 @@
 .button-confirm {
   margin: 10px auto 0 auto;
   width: 25%;
-  height: 40px;
+  height: auto;
   border-radius: 5px;
   border: 2px solid var(--main-color);
   background-color: var(--bg-color);
@@ -182,12 +182,13 @@
   color: var(--font-color);
   cursor: pointer;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .button-register {
   margin: -25px auto 0 auto;
-  width: 120px;
-  height: 40px;
+  width: 25%;
+  height: auto;
   border-radius: 5px;
   border: 2px solid var(--main-color);
   background-color: var(--bg-color);
@@ -197,6 +198,7 @@
   color: var(--font-color);
   cursor: pointer;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
   /* FOOTER */
