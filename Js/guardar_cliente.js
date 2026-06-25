@@ -1,4 +1,4 @@
-const db= require('./conexion.js');
+import {conexion} from './conexion.js';
 
 async function guardarCliente(nombre, correo, telefono, contraseña)
 {
