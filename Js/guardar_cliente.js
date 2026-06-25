@@ -1,6 +1,6 @@
-import {conexion} from './conexion.js';
+import db from './conexion.js';
 
-async function guardarCliente(nombre, correo, telefono, contraseña)
+export async function guardarCliente(nombre, correo, telefono, contraseña)
 {
     const query = 'INSERT INTO cliente (nombre, correo, telefono, contraseña) VALUES (?,?,?,?)';
     try 
@@ -9,9 +9,9 @@ async function guardarCliente(nombre, correo, telefono, contraseña)
         console.log("Cliente guardado con éxito. ID asignado: ",resultado.insertId);
         return resultado.insertId;
     }
-    catch (error)
+    catch (err)
     {
-        console.error("Error al guardar el cliente en la base de datos: ",error);
-        throw error;
+        console.error("Error al guardar el cliente en la base de datos: ",err);
+        throw err;
     }
 }
